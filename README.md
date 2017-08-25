@@ -9,7 +9,7 @@
 $ npm install mockgen --save
 ```
 
-using [http://chancejs.com](chance.js) wrapper for generate the semi-random values
+using [chance.js](http://chancejs.com) wrapper for generating semi-random values
 
 ```javascript
 const MockGen = require('mockgen');
