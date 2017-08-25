@@ -91,7 +91,7 @@ const generateMyMock = MockGen((chance) => ({
   minute: chance.minute(),
   month: chance.month(),
   second: chance.second(),
-  timestamp: chance.timestamp(),
+  //timestamp: chance.timestamp(), -- DO NOT USE THIS function.
   timezone: chance.timezone(),
   year: chance.year(),
 
