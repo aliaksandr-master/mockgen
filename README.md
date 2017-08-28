@@ -126,11 +126,16 @@ const generateMyMock = MockGen((chance) => ({
   rpg: chance.rpg('3d10'),
   tv: chance.tv(),
   unique: chance.unique(chance.state(), 5),
+
+  $stepOneOf1: chance.$stepOneOf(1, 2, 3, 4, 5), // every cycle of generating cursor increment predictable (it is not random)
+  $optional1: chance.$optional(chance.integer(), null), // chance to be integer or null
+  $optional2: chance.$optional(chance.integer()) // chance to be integer or null (by default)
 }));
 
 generateMyMock.version(); // some hash of generator version. it depends from definitions 
 
-const result = generateMyMock(); // generate
+const result = generateMyMock.generate(); // generate
+const results = generateMyMock.generate(100); // generate 100 items
 
 
 
