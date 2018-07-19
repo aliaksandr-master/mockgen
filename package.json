@@ -1,6 +1,6 @@
 {
   "name": "mockgen",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "small mock generator with semi-random value generator. easy to use",
   "main": "lib/index.js",
   "scripts": {
